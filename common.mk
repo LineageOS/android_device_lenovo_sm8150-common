@@ -17,9 +17,6 @@ OVERRIDE_PRODUCT_COMPRESSED_APEX := false
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
-# Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/lenovo/sm8150-common/sm8150-common-vendor.mk)
-
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
@@ -357,3 +354,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     firmware_wlan_mac.bin_symlink \
     firmware_WCNSS_qcom_cfg.ini_symlink
+
+# Inherit the proprietary files
+$(call inherit-product, vendor/lenovo/sm8150-common/sm8150-common-vendor.mk)
