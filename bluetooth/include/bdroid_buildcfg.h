@@ -21,6 +21,25 @@
 
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
+#include <cutils/properties.h>
+#include <string.h>
+
+static inline const char *BtmGetDefaultName()
+{
+    char product_device[PROPERTY_VALUE_MAX];
+    property_get("ro.product.device", product_device, "");
+
+    if (strcmp(product_device, "heart") == 0)
+        return "Lenovo Z5 Pro GT";
+    if (strcmp(product_device, "zippo") == 0)
+        return "Lenovo Z6 Pro";
+
+    // Fallback to ro.product.model
+    return "";
+}
+
+#define BTM_DEF_LOCAL_NAME BtmGetDefaultName()
+
 // Disables read remote device feature
 #define MAX_ACL_CONNECTIONS   16
 #define MAX_L2CAP_CHANNELS    16
