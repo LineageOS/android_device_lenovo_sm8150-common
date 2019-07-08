@@ -3,6 +3,7 @@
 
 # Devices
 /dev/goodix_fp                                                                                                          u:object_r:gx_fpd_device:s0
+/dev/stmvl53l1_ranging                                                                                                  u:object_r:vl53l1_device:s0
 
 # HALs
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.lenovo_msmnile                                    u:object_r:hal_light_default_exec:s0
