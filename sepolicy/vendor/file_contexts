@@ -9,5 +9,8 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.neuralnetworks@1\.2-service-qti                                       u:object_r:vendor_hal_neuralnetworks_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.biometrics\.fingerprint\.inscreen@1\.0-service\.lenovo_msmnile          u:object_r:hal_fod_lenovo_msmnile_exec:s0
 
+# Sys files
+/sys/module/stmvl53l1(/.*)?                                                                                             u:object_r:sysfs_vl53l1:s0
+
 # Touch
 /sys/devices/virtual/touch/tp_dev/gesture_on                                                                            u:object_r:sysfs_tp:s0
