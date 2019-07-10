@@ -132,6 +132,9 @@ ro.hardware.keystore_desede=true
 # LMKD
 ro.config.low_ram=false
 
+# Media
+debug.stagefright.c2inputsurface=-1
+
 # PASR
 vendor.power.pasr.enabled=true
 
