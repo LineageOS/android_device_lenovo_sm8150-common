@@ -87,7 +87,6 @@ on boot
 
 on charger
     setprop persist.sys.usb.config mass_storage
-    trigger enable-low-power
     start vendor.power_off_alarm
     start vendor.thermal-engine
     setprop vendor.usb.controller a600000.dwc3
