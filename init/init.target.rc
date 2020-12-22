@@ -95,9 +95,6 @@ on property:vendor.display.lcd_density=560
 on property:vendor.display.lcd_density=640
    setprop dalvik.vm.heapgrowthlimit 512m
 
-on boot && property:persist.vendor.usb.controller.default=*
-    setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
-
 #pd-mapper
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
