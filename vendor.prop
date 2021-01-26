@@ -156,6 +156,7 @@ debug.sf.phase_offset_threshold_for_next_vsync_ns=11600000
 
 # USB
 sys.usb.mtp.batchcancel=1
+vendor.usb.controller=a600000.dwc3
 vendor.usb.diag.func.name=diag
 vendor.usb.dpl.inst.name=dpl
 vendor.usb.qdss.inst.name=qdss
