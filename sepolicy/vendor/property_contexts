@@ -1,0 +1,9 @@
+# Camera
+persist.camera.pandora.                                         u:object_r:vendor_camera_prop:s0
+persist.camera.watermark.image_rotation                         u:object_r:vendor_camera_prop:s0
+persist.camera.watermark.sensor_position                        u:object_r:vendor_camera_prop:s0
+ro.camera                                                       u:object_r:vendor_camera_prop:s0
+ro.vendor.camera.                                               u:object_r:vendor_camera_prop:s0
+sys.camera.packagename.cts                                      u:object_r:vendor_camera_prop:s0
+sys.camera.packagename.zui                                      u:object_r:vendor_camera_prop:s0
+sys.camera.restart.mark                                         u:object_r:vendor_camera_prop:s0
