@@ -279,7 +279,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti
+    android.hardware.power-service.lineage-libperfmgr
 
 # Privapp-Permissions
 PRODUCT_COPY_FILES += \
@@ -302,7 +302,10 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    bootable/deprecated-ota
+    bootable/deprecated-ota \
+    hardware/google/interfaces \
+    hardware/google/pixel \
+    hardware/lineage/interfaces/power-libperfmgr
 
 # Telephony
 PRODUCT_PACKAGES += \
