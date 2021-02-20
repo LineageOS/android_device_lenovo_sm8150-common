@@ -29,7 +29,6 @@ ro.displayfeature.histogram.enable
 ro.eyecare.brightness.level=5
 ro.eyecare.brightness.threshold=11
 ro.hist.brightness.threshold=7
-ro.sf.lcd_density=440
 ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg
 ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg
 ro.vendor.display.ad=1
