@@ -53,10 +53,12 @@ class FingerprintInscreen : public IFingerprintInscreen {
     Return<int32_t> getSize() override;
 
   private:
+    bool mFodCircleVisible;
     sp<IGoodixFPExtendService> mVendorFpService;
 
     std::mutex mCallbackLock;
     sp<IFingerprintInscreenCallback> mCallback;
+    bool mFingerPressed;
 };
 
 }  // namespace implementation
