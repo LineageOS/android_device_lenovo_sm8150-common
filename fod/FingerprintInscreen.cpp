@@ -23,10 +23,13 @@
 #include <hidl/HidlTransportSupport.h>
 #include <fstream>
 #include <cmath>
+#include <thread>
 
 #define CMD_FINGERPRINT_EVENT 10
 
-#define HBM_ENABLE_PATH "/sys/class/backlight/panel0-hbm/brightness"
+#define DIMLAYER_HBM_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_hbm"
+#define DC_DIM_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_bl"
+#define DOZE_MODE_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/doze_status"
 
 namespace vendor {
 namespace lineage {
@@ -35,6 +38,8 @@ namespace fingerprint {
 namespace inscreen {
 namespace V1_0 {
 namespace implementation {
+
+bool dcDimState;
 
 /*
  * Write value to path and close file.
@@ -56,6 +61,8 @@ static T get(const std::string& path, const T& def) {
 }
 
 FingerprintInscreen::FingerprintInscreen() {
+    this->mFodCircleVisible = false;
+	this->mFingerPressed = false;
     this->mVendorFpService = IGoodixFPExtendService::getService();
 }
 
@@ -65,29 +72,42 @@ Return<void> FingerprintInscreen::onStartEnroll() {
 }
 
 Return<void> FingerprintInscreen::onFinishEnroll() {
-    set(HBM_ENABLE_PATH, 0);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onPress() {
-    this->mVendorFpService->goodixExtendCommand(CMD_FINGERPRINT_EVENT, 1);
-    set(HBM_ENABLE_PATH, 1);
-
+    mFingerPressed = true;
+    //std::thread([this]() {
+    //    std::this_thread::sleep_for(std::chrono::milliseconds(15));
+        if (mFingerPressed) {
+            this->mVendorFpService->goodixExtendCommand(CMD_FINGERPRINT_EVENT, 1);
+        }
+    //}).detach();
     return Void();
 }
 
 Return<void> FingerprintInscreen::onRelease() {
+    mFingerPressed = false;
     this->mVendorFpService->goodixExtendCommand(CMD_FINGERPRINT_EVENT, 0);
-    set(HBM_ENABLE_PATH, 0);
-
     return Void();
 }
 
 Return<void> FingerprintInscreen::onShowFODView() {
+//    if (!mFodCircleVisible) {
+//        dcDimState = get(DC_DIM_PATH, 0);
+//        set(DC_DIM_PATH, 0);
+//    }
+    this->mFodCircleVisible = true;
+    set(DIMLAYER_HBM_PATH, 1);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onHideFODView() {
+//    if (mFodCircleVisible) {
+//        set(DC_DIM_PATH, dcDimState);
+//    }
+    this->mFodCircleVisible = false;
+    set(DIMLAYER_HBM_PATH, 0);
     return Void();
 }
 
@@ -105,17 +125,8 @@ Return<void> FingerprintInscreen::setLongPressEnabled(bool) {
     return Void();
 }
 
-Return<int32_t> FingerprintInscreen::getDimAmount(int32_t brightness) {
-    float alpha;
-    int realBrightness = brightness * 2047 / 255;
-
-    if (realBrightness > 500) {
-        alpha = 1.0 - pow(realBrightness / 2047.0 * 430.0 / 600.0, 0.455);
-    } else {
-        alpha = 1.0 - pow(realBrightness / 1680.0, 0.455);
-    }
-
-    return 255 * alpha;
+Return<int32_t> FingerprintInscreen::getDimAmount(int32_t) {
+	return 0;
 }
 
 Return<bool> FingerprintInscreen::shouldBoostBrightness() {
