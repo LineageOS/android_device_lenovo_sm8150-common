@@ -1,4 +1,5 @@
 # Camera
+persist.camera.arcsoft.                                         u:object_r:vendor_camera_prop:s0
 persist.camera.pandora.                                         u:object_r:vendor_camera_prop:s0
 persist.camera.watermark.image_rotation                         u:object_r:vendor_camera_prop:s0
 persist.camera.watermark.sensor_position                        u:object_r:vendor_camera_prop:s0
@@ -7,6 +8,7 @@ ro.vendor.camera.                                               u:object_r:vendo
 sys.camera.packagename.cts                                      u:object_r:vendor_camera_prop:s0
 sys.camera.packagename.zui                                      u:object_r:vendor_camera_prop:s0
 sys.camera.restart.mark                                         u:object_r:vendor_camera_prop:s0
+sys.tof.cal                                                     u:object_r:vendor_camera_prop:s0
 
 # Lenovo factory props
 sys.bt.address                                                  u:object_r:fac_prop:s0

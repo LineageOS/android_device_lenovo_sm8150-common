@@ -19,3 +19,8 @@ allow vl53l1_daemon_main vl53l1_device:chr_file rw_file_perms;
 
 allow vl53l1_daemon_main mnt_vendor_file:dir r_dir_perms;
 allow vl53l1_daemon_main mnt_vendor_file:file r_file_perms;
+
+allow vl53l1_daemon_main property_socket:sock_file write;
+allow vl53l1_daemon_main init:unix_stream_socket connectto;
+
+set_prop(vl53l1_daemon_main, vendor_camera_prop)
