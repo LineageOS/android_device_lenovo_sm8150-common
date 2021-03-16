@@ -173,7 +173,7 @@ vendor/lib64/libsdsprpc.so
 # Charger
 vendor/bin/hvdcp_opti
 
-# CNE from nx627j - qssi_NX627J-user-11-RKQ1.200826.002-nubia.20201029.204053-release-keys
+# CNE - from NX627J - nubia/NX627J/NX627J:11/RKQ1.200826.002/nubia.20210129.161619:user/release-keys
 system_ext/framework/com.quicinc.cne.api-V1.1-java.jar|88da95df5925ab3c173f951cfe56c95699908359
 system_ext/framework/com.quicinc.cne.constants-V1.0-java.jar|b30a8b9a9fad4dfb8ce231084ea0baf99f54931d
 system_ext/framework/com.quicinc.cne.constants-V2.0-java.jar|e8e9b049f09aee835084cc4bca081c3905221d7a
@@ -277,7 +277,7 @@ vendor/lib64/libcvp_stub.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0-halimpl.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
 
-# Display - from nx627j - qssi_NX627J-user-11-RKQ1.200826.002-nubia.20201029.204053-release-keys
+# Display - from NX627J - nubia/NX627J/NX627J:11/RKQ1.200826.002/nubia.20210129.161619:user/release-keys
 vendor/lib64/libdisp-aba.so|d904572dedd19e88053c3352d2a24c666362b23b
 vendor/lib64/libdisplayqos.so|3e95c6aedbfca5132ef75365e0a45a32c79b1fd6
 vendor/lib64/libdpps.so|d90c23d4563ee0da74bf5e08d8ef016eaafb692b
@@ -316,7 +316,7 @@ vendor/etc/qdcm_calib_data_td4328_video_mode_dsi_truly_panel.xml
 vendor/etc/qdcm_calib_data_td4330_cmd_mode_dsi_truly_panel.xml
 vendor/etc/qdcm_calib_data_td4330_video_mode_dsi_truly_panel.xml
 
-# DPM - from nx627j - qssi_NX627J-user-11-RKQ1.200826.002-nubia.20201120.231859-release-keys
+# DPM - from NX627J - nubia/NX627J/NX627J:11/RKQ1.200826.002/nubia.20210129.161619:user/release-keys
 system_ext/bin/dpmd|bc22fa258f3975744e248dc7d9f26a00a9981ca7
 system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
 system_ext/etc/init/dpmd.rc|738b638ff04cda368e22c03e16baf90ba157a6fc
@@ -1176,7 +1176,7 @@ vendor/lib64/libaoa.so
 # WiFi firmware
 vendor/firmware/bdwlan_zippo.bin
 
-# WiFi Display - from qssi_NX627J-user-11-RKQ1.200826.002-nubia.20201029.204053-release-keys
+# WiFi Display - from NX627J - nubia/NX627J/NX627J:11/RKQ1.200826.002/nubia.20210129.161619:user/release-keys
 system_ext/bin/wfdservice|91f6e2d58de9354a694d3b3da6e6d224dd7e47c1
 system_ext/etc/init/wfdservice.rc|aab7aecb01c359fd521c99957c4d5bfd16a8dfae
 system_ext/lib/libmmosal.so|175c890c965a14043777000cd2cfc20264b04810
@@ -1224,7 +1224,7 @@ vendor/lib/libFileMux_proprietary.so|34d6727b02f1a7898e58451769a9db1151d4b872
 vendor/lib/libmmosal.so|bc3378f26f668c3060174a6abc8e7a640dd9730d
 vendor/lib/libmmrtpdecoder_proprietary.so|6961014e8c6bf6d239248e2eb00abab1f94591c2
 vendor/lib/libmmrtpencoder_proprietary.so|bb9b24108645b146045b3116d94b9a5ee7f99897
-vendor/lib/libwfdaac_vendor.so|dd6c4da4eeecfc69f87a48b2628cd4738ada3e5d
+vendor/lib/libwfdaac_vendor.so|6c50c3e1755b89b05b5f6de4252a6892271ae6a7
 vendor/lib/libwfdcodecv4l2_proprietary.so|44cee5801d543df39823c03305fda4da391efd5e
 vendor/lib/libwfdcommonutils_proprietary.so|4db21e26ee963db622ffcfe65cda1684a84f6749
 vendor/lib/libwfdconfigutils_proprietary.so|f132f05a7a589298c69b45f90bffe6e8c676590f
@@ -1245,7 +1245,7 @@ vendor/lib/libwfdutils_proprietary.so|083ecf4bd940f4574ae39319c4e310c5fc78be76
 vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so|fdec0b67d1900c354bb47eb311ae318e420baa19
 vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so|0d10d27ad15c67e4721ef1ba47ac8ada480a6610
 
-# WiFi Display - HDCP - from qssi_NX627J-user-11-RKQ1.200826.002-nubia.20201029.204053-release-keys
+# WiFi Display - HDCP - from NX627J - nubia/NX627J/NX627J:11/RKQ1.200826.002/nubia.20210129.161619:user/release-keys
 vendor/bin/wfdhdcphalservice|047b81f6902ec29606dc72443dc74b58e83153b2
 vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc|c266f08783a17f6583e3f22c85e55b0c200442ea
 vendor/lib64/libhdcp1prov.so|d8d58cbf3e28dec36fb205d585c1fda3f3029d3b
