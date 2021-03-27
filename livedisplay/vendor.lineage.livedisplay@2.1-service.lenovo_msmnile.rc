@@ -4,7 +4,7 @@ on init
     chmod 0660 /sys/class/backlight/panel0-hbm/brightness
     chmod 0660 /sys/class/dsi_hbm/hbm/enable
 
-service vendor.livedisplay-hal-2-0 /vendor/bin/hw/vendor.lineage.livedisplay@2.0-service.lenovo_msmnile
+service vendor.livedisplay-hal-2-1 /vendor/bin/hw/vendor.lineage.livedisplay@2.1-service.lenovo_msmnile
     class hal
     user system
     group system
