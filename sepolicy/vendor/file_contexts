@@ -6,6 +6,7 @@
 /dev/stmvl53l1_ranging                                                                                                  u:object_r:vl53l1_device:s0
 
 # HALs
+/(vendor|system/vendor)/bin/hw/vendor\.zui\.hardware\.ifaa@1\.0-service                                                 u:object_r:hal_ifaa_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.lenovo_msmnile                                    u:object_r:hal_light_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.biometrics\.fingerprint\.inscreen@1\.0-service\.lenovo_msmnile          u:object_r:hal_fod_lenovo_msmnile_exec:s0
 
