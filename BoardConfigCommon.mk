@@ -170,7 +170,6 @@ BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH_COMMON)/sepolicy/public
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH_COMMON)/sepolicy/vendor
 
 # Power
-TARGET_USES_INTERACTION_BOOST := true
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/touch/tp_dev/gesture_on"
 
 # Verified Boot
