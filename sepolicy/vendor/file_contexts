@@ -16,3 +16,6 @@
 
 # Touch
 /sys/devices/virtual/touch/tp_dev/gesture_on                                                                            u:object_r:sysfs_tp:s0
+
+# Vendor
+/(vendor|system/vendor)/camera(/.*)?                                                                                    u:object_r:vendor_camera_file:s0
