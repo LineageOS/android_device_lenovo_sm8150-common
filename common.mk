@@ -171,6 +171,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.set_kptr.rc \
     init.target.rc \
+    init.qcom.performance.rc \
     init.recovery.qcom.rc \
     ueventd.qcom.rc
 
