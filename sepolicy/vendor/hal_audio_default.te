@@ -1,1 +1,2 @@
 allow hal_audio_default sysfs:dir { open read getattr map };
+set_prop(hal_audio_default, vendor_audio_prop)
