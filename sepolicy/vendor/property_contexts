@@ -13,6 +13,9 @@ sys.camera.packagename.zui                                      u:object_r:vendo
 sys.camera.restart.mark                                         u:object_r:vendor_camera_prop:s0
 sys.tof.cal                                                     u:object_r:vendor_camera_prop:s0
 
+# Fingerprint
+gf.debug.                                                       u:object_r:vendor_default_prop:s0
+
 # Lenovo factory props
 sys.bt.address                                                  u:object_r:fac_prop:s0
 sys.lenovosn                                                    u:object_r:fac_prop:s0
