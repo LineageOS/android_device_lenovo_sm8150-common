@@ -11,7 +11,9 @@ on post-fs
 
 on init
     # permission for dt2w
+    chown system system /sys/devices/virtual/touch/tp_dev/double_tap_enable
     chown system system /sys/devices/virtual/touch/tp_dev/gesture_on
+    chmod 0660 /sys/devices/virtual/touch/tp_dev/double_tap_enable
     chmod 0660 /sys/devices/virtual/touch/tp_dev/gesture_on
 
 # Add factest service
