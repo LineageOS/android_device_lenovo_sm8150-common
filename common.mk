@@ -29,8 +29,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage/lineage-sdk \
-    $(LOCAL_PATH)/overlay-lineage/packages/apps/Snap
+    $(LOCAL_PATH)/overlay-lineage/lineage-sdk
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
@@ -142,8 +141,7 @@ PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
     libdng_sdk \
     libgui_vendor \
-    libxml2 \
-    Snap
+    libxml2
 
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libc++.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++.so
