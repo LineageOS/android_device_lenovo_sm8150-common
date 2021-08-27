@@ -15,4 +15,4 @@
 # Sys files
 /sys/class/touch/tp_dev(/.*)?                                                                                           u:object_r:sysfs_tp:s0
 /sys/module/stmvl53l1(/.*)?                                                                                             u:object_r:sysfs_vl53l1:s0
-/sys/devices/virtual/touch/tp_dev/gesture_on                                                                            u:object_r:sysfs_tp:s0
+/sys/devices/virtual/touch/tp_dev(/.*)?                                                                                 u:object_r:sysfs_tp:s0
