@@ -22,6 +22,30 @@
       "revId": "28f2c7d43b67d9a900eac3a69d6f08e57263122f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "81b594b4_f709267d",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2021-10-08T18:55:37Z",
+      "side": 1,
+      "message": "Thanks for the advice",
+      "parentUuid": "45657aa9_c461ba40",
+      "range": {
+        "startLine": 7,
+        "startChar": 15,
+        "endLine": 7,
+        "endChar": 47
+      },
+      "revId": "28f2c7d43b67d9a900eac3a69d6f08e57263122f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
