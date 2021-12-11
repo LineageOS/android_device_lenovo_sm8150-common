@@ -5,3 +5,5 @@ allow init vendor_file:file mounton;
 allow init vendor_configs_file:dir mounton;
 
 allow init vendor_hal_dpmqmi_hwservice:hwservice_manager find;
+
+allow init vendor_sysfs_battery_supply:file { setattr };
