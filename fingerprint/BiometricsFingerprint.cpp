@@ -110,7 +110,7 @@ BiometricsFingerprint::BiometricsFingerprint() : mClientCallback(nullptr), mDevi
                 continue;
             }
 
-            mDevice->extCmd(mDevice, COMMAND_NIT, readBool(fd) ? PARAM_NIT_FOD : PARAM_NIT_NONE);
+            mDevice->goodixExtendCommand(mDevice, COMMAND_NIT, readBool(fd) ? PARAM_NIT_FOD : PARAM_NIT_NONE);
         }
     }).detach();
 }
@@ -456,8 +456,8 @@ void BiometricsFingerprint::notify(const fingerprint_msg_t* msg) {
     }
 }
 
-Return<int32_t> BiometricsFingerprint::extCmd(int32_t cmd, int32_t param) {
-    return mDevice->extCmd(mDevice, cmd, param);
+Return<int32_t> BiometricsFingerprint::goodixExtendCommand(int32_t cmd, int32_t param) {
+    return mDevice->goodixExtendCommand(mDevice, cmd, param);
 }
 
 Return<bool> BiometricsFingerprint::isUdfps(uint32_t /* sensorId */) {
