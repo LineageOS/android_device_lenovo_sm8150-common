@@ -195,8 +195,7 @@ PRODUCT_PACKAGES += \
     gralloc.msmnile \
     hwcomposer.msmnile \
     libdisplayconfig.qti \
-    libdisplayconfig.qti.vendor \
-    libdisplaydebug \
+    libdisplayconfig.system.qti \
     libqdMetaData \
     libqdMetaData.system \
     libqdutils \
