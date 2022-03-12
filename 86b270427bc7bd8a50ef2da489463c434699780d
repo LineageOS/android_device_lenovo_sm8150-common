@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "42d32a53_aa95a565",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2022-03-12T05:00:17Z",
+      "side": 1,
+      "message": "Unfortunately for us, it seems sometimes it will work but only video streams to my Roku-infused TV, but the audio only plays on my zippo... and sometimes it just refuses to connect at all. Oh well, I think we should just go for AOSP WFD for meow and maybe in the future if we can find a solution that works for Lenovo sm8150 without using BSP stuff? We can go in that direction.",
+      "revId": "86b270427bc7bd8a50ef2da489463c434699780d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
