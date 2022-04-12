@@ -332,6 +332,9 @@ AB_OTA_UPDATER := false
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service.dual_role_usb
 
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/qcom/opensource/usb/etc
+
 # Vibrator
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service
