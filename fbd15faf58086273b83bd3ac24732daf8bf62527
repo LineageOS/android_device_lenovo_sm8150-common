@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a81059ec_e56e0c1b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2022-04-26T03:00:10Z",
+      "side": 1,
+      "message": "Heart users say it works well and I like it on zippo",
+      "revId": "fbd15faf58086273b83bd3ac24732daf8bf62527",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
