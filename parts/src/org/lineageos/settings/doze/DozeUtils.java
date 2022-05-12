@@ -26,15 +26,12 @@ import android.hardware.SensorManager;
 import android.os.UserHandle;
 import android.provider.Settings;
 import android.util.Log;
-
 import androidx.preference.PreferenceManager;
 
 import static android.provider.Settings.Secure.DOZE_ALWAYS_ON;
 import static android.provider.Settings.Secure.DOZE_ENABLED;
 
 public final class DozeUtils {
-
-    protected static final String DOZE_ENABLE = "doze_enable";
 
     private static final String TAG = "DozeUtils";
     private static final boolean DEBUG = false;
@@ -45,6 +42,7 @@ public final class DozeUtils {
 
     protected static final String CATEG_PICKUP_SENSOR = "pickup_sensor";
     protected static final String CATEG_PROX_SENSOR = "proximity_sensor";
+    protected static final String DOZE_ENABLE = "doze_enable";
 
     protected static final String GESTURE_PICK_UP_KEY = "gesture_pick_up";
     protected static final String GESTURE_SMART_WAKE_KEY = "gesture_smart_wake";

@@ -15,10 +15,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
-    <!-- Ambient settings -->
-    <string name="ambient_enable">Use Ambient display</string>
-
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
         <!-- Smart wake strings-->
     <string name="smart_wake_gesture_title">Smart Wake</string>
     <string name="smart_wake_gesture_summary">Pulse notifications on slight motion of device and wake screen when picked up</string>
