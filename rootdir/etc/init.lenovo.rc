@@ -60,3 +60,13 @@ on boot
 #on property:vendor.wipe_data=1
 #    factory_data_misc
 # Factory reset end
+
+service vendor.hwcomposer-2-4 /vendor/bin/hw/android.hardware.graphics.composer@2.4-service
+    override
+    class hal animation
+    user system
+    group graphics drmrpc
+    capabilities SYS_NICE
+    onrestart restart surfaceflinger
+    writepid /dev/cpuset/system-background/tasks
+    socket pps stream 0660 system system
