@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6ceb7a31_04c7b8ba",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2022-05-15T00:00:27Z",
+      "side": 1,
+      "message": "Thank you for the review Michael, I have removed the unrelated changes",
+      "revId": "06907d5800888011897c3e364ee9970b0e061e3c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}

@@ -41,6 +41,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c27e32ec_7a6699c2",
+        "filename": "parts/res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2022-05-15T00:00:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "591618f5_6e07305d",
+      "range": {
+        "startLine": 18,
+        "startChar": 11,
+        "endLine": 18,
+        "endChar": 63
+      },
+      "revId": "75533f012f6601dd9166ea54172112cbb1565708",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d267cdfe_bfe5bc5a",
@@ -54,6 +78,24 @@
       "writtenOn": "2022-05-14T08:47:05Z",
       "side": 1,
       "message": "stray newline",
+      "revId": "75533f012f6601dd9166ea54172112cbb1565708",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "96904e5d_746fd931",
+        "filename": "parts/src/org/lineageos/settings/doze/DozeSettingsFragment.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2022-05-15T00:00:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d267cdfe_bfe5bc5a",
       "revId": "75533f012f6601dd9166ea54172112cbb1565708",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
@@ -81,6 +123,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "88d33312_dbbc0726",
+        "filename": "parts/src/org/lineageos/settings/doze/DozeSettingsFragment.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 165,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2022-05-15T00:00:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c845af87_f5af662a",
+      "range": {
+        "startLine": 162,
+        "startChar": 0,
+        "endLine": 165,
+        "endChar": 5
+      },
+      "revId": "75533f012f6601dd9166ea54172112cbb1565708",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b2192029_9740e392",
@@ -94,6 +160,30 @@
       "writtenOn": "2022-05-14T08:47:05Z",
       "side": 1,
       "message": "unrelated",
+      "range": {
+        "startLine": 45,
+        "startChar": 0,
+        "endLine": 45,
+        "endChar": 62
+      },
+      "revId": "75533f012f6601dd9166ea54172112cbb1565708",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d8d2ac91_cd0d723f",
+        "filename": "parts/src/org/lineageos/settings/doze/DozeUtils.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2022-05-15T00:00:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b2192029_9740e392",
       "range": {
         "startLine": 45,
         "startChar": 0,

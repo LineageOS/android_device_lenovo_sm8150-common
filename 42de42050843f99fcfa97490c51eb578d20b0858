@@ -16,6 +16,24 @@
       "message": "unrelated",
       "revId": "42de42050843f99fcfa97490c51eb578d20b0858",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5727ba55_89630f50",
+        "filename": "parts/src/org/lineageos/settings/doze/DozeUtils.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2022-05-15T00:00:27Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "9ae3fc22_03ba9f8f",
+      "revId": "42de42050843f99fcfa97490c51eb578d20b0858",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
