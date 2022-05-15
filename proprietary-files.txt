@@ -184,23 +184,34 @@ vendor/lib64/libcvp_common.so
 vendor/lib64/libcvp_stub.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
 
-# Display (HDR) - from NX627J - nubia/NX627J/NX627J:11/RKQ1.200826.002/nubia.20210129.161619:user/release-keys
-vendor/lib64/libhdr_tm.so|9977b4ccb6667d990210c1ac980e55325f7e7a50
+# Display (HDR)
+vendor/lib64/libhdr_tm.so
+
+# Display (SDM)
+vendor/lib64/libdisplayqos.so
+vendor/lib64/libqseed3.so
+vendor/lib64/libsdm-color.so
+vendor/lib64/libsdm-colormgr-algo.so
+vendor/lib64/libsdm-diag.so
+vendor/lib64/libsdm-disp-vndapis.so
+vendor/lib64/libsdmextension.so
+vendor/lib64/libtinyxml2_1.so
 
 # Display (SDM) - from NX627J - nubia/NX627J/NX627J:11/RKQ1.200826.002/nubia.20210129.161619:user/release-keys
-vendor/lib64/libdisplayqos.so|3e95c6aedbfca5132ef75365e0a45a32c79b1fd6
-vendor/lib64/libqseed3.so|a449d79b912415f542509874b43338b27795a1c3
 vendor/lib64/libsdedrm.so|582910d21139781ad9e414c35207584f51e035e2
-vendor/lib64/libsdm-color.so|b2bcf2c205b501024407ed5c216d2b290688bd64
-vendor/lib64/libsdm-colormgr-algo.so|6d17546d7822803700dc21968f75069d1b7392b1
-vendor/lib64/libsdm-diag.so|3d5c311d7d5d842e5a75e9ae3f9f70ceb00cd1cf
-vendor/lib64/libsdm-disp-vndapis.so|42f536763a2f91dcbae5b4b7214e652283c389d6
-vendor/lib64/libsdmextension.so|0aed8ab6ecf878ae57ecba4b8a9bfb0d184ab5f7
-vendor/lib64/libtinyxml2_1.so|621dbc8e3d0529b9ee35393698de82ea006ca7fa
 
-# Display (SDM) - from NX627J - nubia/NX627J/NX627J:11/RKQ1.200826.002/nubia.20210129.161619:user/release-keys
-vendor/bin/ppd|cbf0688e3b6006f9e7df5ead85e9c1370d0195da
-vendor/lib64/libdisp-aba.so|d904572dedd19e88053c3352d2a24c666362b23b
+# Display postprocessing
+vendor/bin/hw/vendor.display.color@1.0-service
+vendor/bin/ppd
+vendor/etc/init/vendor.display.color@1.0-service.rc
+vendor/lib64/libdisp-aba.so
+vendor/lib64/vendor.display.color@1.0.so
+vendor/lib64/vendor.display.color@1.1.so
+vendor/lib64/vendor.display.color@1.2.so
+vendor/lib64/vendor.display.color@1.3.so
+vendor/lib64/vendor.display.color@1.4.so
+vendor/lib64/vendor.display.color@1.5.so
+vendor/lib64/vendor.display.postproc@1.0.so
 
 # Display calibration data
 vendor/etc/qdcm_calib_data_Dual_nt35597_cmd_mode_dsi_truly_panel_without_DSC.xml.xml
@@ -384,7 +395,6 @@ vendor/lib64/libOpenCL.so
 vendor/lib64/libVkLayer_q3dtools.so
 vendor/lib64/libadreno_app_profiles.so
 vendor/lib64/libadreno_utils.so
-vendor/lib64/libC2D2.so
 vendor/lib64/libc2d30_bltlib.so
 vendor/lib64/libgpudataproducer.so
 vendor/lib64/libgsl.so

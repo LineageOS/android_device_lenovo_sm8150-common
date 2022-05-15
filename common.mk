@@ -191,9 +191,12 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     gralloc.msmnile \
     hwcomposer.msmnile \
+    libsdmcore \
+    libsdmutils \
     libtinyxml \
     libvulkan \
     memtrack.msmnile \
+    vendor.display.config@2.0 \
     vendor.display.config@2.0.vendor \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.mapper@1.1.vendor \
