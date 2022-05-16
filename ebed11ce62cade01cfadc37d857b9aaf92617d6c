@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "618b4e11_15119064",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2022-05-16T17:50:44Z",
+      "side": 1,
+      "message": "I think the problem before with the logspam for hwinfodrm was because of libsdedrm from zippo not playing nice with the source-built hwcomposer, so leaving that blob from nubia but updating the rest from zippo seems fine",
+      "revId": "ebed11ce62cade01cfadc37d857b9aaf92617d6c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
