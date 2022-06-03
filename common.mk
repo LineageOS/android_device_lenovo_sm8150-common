@@ -341,6 +341,10 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor \
     android.hardware.power-service-qti
 
+# Privapp-Permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/privapp-permissions-zuicamera.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-zuicamera.xml
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
