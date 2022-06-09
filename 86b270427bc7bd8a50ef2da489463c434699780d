@@ -33,6 +33,24 @@
       "message": "you can try https://github.com/PotatoDevices/device_xiaomi_sm6150-common/commit/2ce9842ecce44a7fef5783971cf96e436ee16771: qcom probably hooked some stuff to one prop",
       "revId": "86b270427bc7bd8a50ef2da489463c434699780d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "19803b6a_93239220",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2022-06-09T04:23:56Z",
+      "side": 1,
+      "message": "Interesting, maybe it changed for A12? I did have a commit about it like a year ago on LineageOS 18.1 but I never merged it since it didn\u0027t make a difference on WFD and at the time it seemed like a debugging prop so I might have to try it again then with lemonade\u0027s stack or maybe sweet since that\u0027s sm6150 and it has A12 so for sure it would be 100% compatible to sm8150 since they\u0027re the same kernel version too\n\nhttps://review.lineageos.org/c/LineageOS/android_device_lenovo_sm8150-common/+/309739",
+      "parentUuid": "ee28550b_fd1012e4",
+      "revId": "86b270427bc7bd8a50ef2da489463c434699780d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
