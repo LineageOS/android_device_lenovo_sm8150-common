@@ -359,7 +359,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.2 \
     android.hardware.secure_element@1.2.vendor \
-    libprotobuf-cpp-full \
     libril \
     librilutils \
     librmnetctl \
