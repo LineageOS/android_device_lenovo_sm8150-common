@@ -194,7 +194,6 @@ PRODUCT_PACKAGES += \
     libion.vendor \
     libsdmcore \
     libsdmutils \
-    libtinyxml \
     libvulkan \
     vendor.display.config@2.0 \
     vendor.display.config@2.0.vendor \
