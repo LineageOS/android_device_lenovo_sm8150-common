@@ -23,8 +23,18 @@ def FullOTA_Assertions(info):
   AddModemAssertion(info, info.input_zip)
   return
 
+def FullOTA_InstallBegin(info):
+  input_zip = info.input_zip
+  AddImage(info, "RADIO", input_zip, "super_dummy.img", "/tmp/super_dummy.img");
+  flash_script = open("device/lenovo/sm8150-common/partitions/flash_super_dummy.sh", 'r').read()
+  common.ZipWriteStr(info.output_zip, "install/bin/flash_super_dummy.sh", flash_script);
+  info.script.AppendExtra('package_extract_file("install/bin/flash_super_dummy.sh", "/tmp/flash_super_dummy.sh");')
+  info.script.AppendExtra('run_program("/sbin/sh", "/tmp/flash_super_dummy.sh");')
+  return
+
 def FullOTA_InstallEnd(info):
-  OTA_InstallEnd(info)
+  input_zip = info.input_zip
+  OTA_InstallEnd(info, input_zip)
   return
 
 def IncrementalOTA_Assertions(info):
@@ -32,7 +42,8 @@ def IncrementalOTA_Assertions(info):
   return
 
 def IncrementalOTA_InstallEnd(info):
-  OTA_InstallEnd(info)
+  input_zip = info.target_zip
+  OTA_InstallEnd(info, input_zip)
   return
 
 def AddModemAssertion(info, input_zip):
@@ -45,14 +56,18 @@ def AddModemAssertion(info, input_zip):
       cmd = 'assert(lenovo.verify_modem("{}") == "1" || abort("ERROR: This package requires firmware from ZUI {} build or newer. Please upgrade firmware and retry!"););'
       info.script.AppendExtra(cmd.format(timestamp, firmware_version))
 
-def AddImage(info, basename, dest):
-  name = basename
-  data = info.input_zip.read("IMAGES/" + basename)
-  common.ZipWriteStr(info.output_zip, name, data)
-  info.script.AppendExtra('package_extract_file("%s", "%s");' % (name, dest))
+def AddImage(info, dir, input_zip, basename, dest):
+  path = dir + "/" + basename
+  if path not in input_zip.namelist():
+    return
 
-def OTA_InstallEnd(info):
-  info.script.Print("Patching firmware images...")
-  AddImage(info, "vbmeta.img", "/dev/block/bootdevice/by-name/vbmeta")
-  AddImage(info, "dtbo.img", "/dev/block/bootdevice/by-name/dtbo")
+  data = input_zip.read(path)
+  common.ZipWriteStr(info.output_zip, basename, data)
+  info.script.Print("Flashing {} image".format(dest.split('/')[-1]))
+  info.script.AppendExtra('package_extract_file("%s", "%s");' % (basename, dest))
+
+def OTA_InstallEnd(info, input_zip):
+  info.script.Print("Patching dtbo and vbmeta images...")
+  AddImage(info, "IMAGES", input_zip, "dtbo.img", "/dev/block/bootdevice/by-name/dtbo")
+  AddImage(info, "IMAGES", input_zip, "vbmeta.img", "/dev/block/bootdevice/by-name/vbmeta")
   return
