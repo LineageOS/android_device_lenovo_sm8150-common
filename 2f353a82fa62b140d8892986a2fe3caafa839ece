@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a83b11f3_26e9b2b0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-03-30T11:58:30Z",
+      "side": 1,
+      "message": "There\u0027s something fishy here. First time I see this on a DeviceSettings app, that no one else needs.",
+      "revId": "2f353a82fa62b140d8892986a2fe3caafa839ece",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
