@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "599b855b_3fce1176",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 6
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 31890
+      },
+      "writtenOn": "2024-04-06T22:04:31Z",
+      "side": 1,
+      "message": "Fairphone?",
+      "range": {
+        "startLine": 9,
+        "startChar": 3,
+        "endLine": 9,
+        "endChar": 13
+      },
+      "revId": "f103b68972fc8d3e6947ee43e8d8966ee9a4779d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
