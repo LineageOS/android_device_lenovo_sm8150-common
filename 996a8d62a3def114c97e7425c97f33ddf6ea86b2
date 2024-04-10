@@ -1,4 +1,28 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "28445282_6da97913",
+        "filename": "overlay-lineage/lineage-sdk/lineage/res/res/values/config.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 28134
+      },
+      "writtenOn": "2024-04-10T07:56:09Z",
+      "side": 1,
+      "message": "Hi, it\u0027s not essential but perhaps the comment explaining the code should be updated with the changes from the commit by removing the \"not\"?",
+      "range": {
+        "startLine": 17,
+        "startChar": 42,
+        "endLine": 17,
+        "endChar": 45
+      },
+      "revId": "996a8d62a3def114c97e7425c97f33ddf6ea86b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ],
   "submitRequirementResults": []
 }
