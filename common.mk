@@ -194,7 +194,6 @@ PRODUCT_PACKAGES += \
     libion.vendor \
     libsdmcore \
     libsdmutils \
-    libvulkan \
     vendor.display.config@2.0 \
     vendor.display.config@2.0.vendor \
     vendor.qti.hardware.display.allocator-service \
