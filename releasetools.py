@@ -1,7 +1,7 @@
 # Copyright (C) 2009 The Android Open Source Project
 # Copyright (c) 2011, The Linux Foundation. All rights reserved.
 # Copyright (C) 2019 The Mokee Open Source Project
-# Copyright (C) 2017-2019 The LineageOS Open Source Project
+# Copyright (C) 2017-2024 The LineageOS Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,13 +15,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import hashlib
 import common
 import re
-
-def FullOTA_Assertions(info):
-  AddModemAssertion(info, info.input_zip)
-  return
 
 def FullOTA_InstallBegin(info):
   input_zip = info.input_zip
@@ -36,24 +31,10 @@ def FullOTA_InstallEnd(info):
   OTA_InstallEnd(info, input_zip)
   return
 
-def IncrementalOTA_Assertions(info):
-  AddModemAssertion(info, info.target_zip)
-  return
-
 def IncrementalOTA_InstallEnd(info):
   input_zip = info.target_zip
   OTA_InstallEnd(info, input_zip)
   return
-
-def AddModemAssertion(info, input_zip):
-  android_info = info.input_zip.read("OTA/android-info.txt")
-  m = re.search(r'require\s+version-modem\s*=\s*(.+)', android_info.decode('utf-8'))
-  if m:
-    timestamp, firmware_version = m.group(1).rstrip().split(',')
-    if ((len(timestamp) and '*' not in timestamp) and \
-        (len(firmware_version) and '*' not in firmware_version)):
-      cmd = 'assert(lenovo.verify_modem("{}") == "1" || abort("ERROR: This package requires firmware from ZUI {} build or newer. Please upgrade firmware and retry!"););'
-      info.script.AppendExtra(cmd.format(timestamp, firmware_version))
 
 def AddImage(info, dir, input_zip, basename, dest):
   path = dir + "/" + basename
