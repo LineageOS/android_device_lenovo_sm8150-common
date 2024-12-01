@@ -1,5 +1,5 @@
 
-# Copyright (C) 2019-2024 The LineageOS Project
+# Copyright (C) 2019-2025 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -160,7 +160,7 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH_COMMON)/vendor.prop
 
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH_COMMON)/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH_COMMON)/init/fstab.qcom
 ifeq ($(BOARD_KERNEL_SEPARATED_DTBO),true)
     # Enable DTBO for recovery image
     BOARD_INCLUDE_RECOVERY_DTBO := true
