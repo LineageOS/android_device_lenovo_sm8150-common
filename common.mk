@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019-2024 The LineageOS Project
+# Copyright (C) 2019-2025 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -152,34 +152,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
-# Device init scripts
-PRODUCT_PACKAGES += \
-    fstab.qcom \
-    init.class_main.sh \
-    init.crda.sh \
-    init.mdm.sh \
-    init.qcom.class_core.sh \
-    init.qcom.coex.sh \
-    init.qcom.early_boot.sh \
-    init.qcom.efs.sync.sh \
-    init.qcom.post_boot.sh \
-    init.qcom.sdio.sh \
-    init.qcom.sensors.sh \
-    init.qcom.sh \
-    init.qcom.usb.sh \
-    init.qti.chg_policy.sh \
-    init.qti.dcvs.sh \
-    init.qti.qcv.sh \
-    init.lenovo.rc \
-    init.qcom.factory.rc \
-    init.qcom.rc \
-    init.qcom.usb.rc \
-    init.set_kptr.rc \
-    init.target.rc \
-    init.qcom.power.rc \
-    init.recovery.qcom.rc \
-    ueventd.qcom.rc
-
 # Device-specific settings
 PRODUCT_PACKAGES += \
     LenovoParts
@@ -257,6 +229,35 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/org.ifaa.android.manager/etc/permissions/org.ifaa.android.manager.permissions.xml:/$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/org.ifaa.android.manager.permissions.xml
+
+# Init
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    fstab.qcom.ramdisk \
+    init.lenovo.rc \
+    init.qcom.factory.rc \
+    init.qcom.power.rc \
+    init.qcom.rc \
+    init.qcom.usb.rc \
+    init.recovery.qcom.rc \
+    init.set_kptr.rc \
+    init.target.rc \
+    ueventd.qcom.rc \
+    init.class_main.sh \
+    init.crda.sh \
+    init.mdm.sh \
+    init.qcom.class_core.sh \
+    init.qcom.coex.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.efs.sync.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.sdio.sh \
+    init.qcom.sensors.sh \
+    init.qcom.sh \
+    init.qcom.usb.sh \
+    init.qti.chg_policy.sh \
+    init.qti.dcvs.sh \
+    init.qti.qcv.sh
 
 # Input
 PRODUCT_COPY_FILES += \
