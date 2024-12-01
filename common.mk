@@ -155,6 +155,16 @@ PRODUCT_PACKAGES += \
 # Device init scripts
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    fstab.qcom.ramdisk \
+    init.lenovo.rc \
+    init.qcom.factory.rc \
+    init.qcom.power.rc \
+    init.qcom.rc \
+    init.qcom.recovery.rc \
+    init.qcom.usb.rc \
+    init.set_kptr.rc \
+    init.target.rc \
+    ueventd.qcom.rc \
     init.class_main.sh \
     init.crda.sh \
     init.mdm.sh \
@@ -169,16 +179,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     init.qti.chg_policy.sh \
     init.qti.dcvs.sh \
-    init.qti.qcv.sh \
-    init.lenovo.rc \
-    init.qcom.factory.rc \
-    init.qcom.rc \
-    init.qcom.usb.rc \
-    init.set_kptr.rc \
-    init.target.rc \
-    init.qcom.power.rc \
-    init.recovery.qcom.rc \
-    ueventd.qcom.rc
+    init.qti.qcv.sh
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
