@@ -155,6 +155,7 @@ PRODUCT_PACKAGES += \
 # Device init scripts
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    fstab.qcom.ramdisk \
     init.class_main.sh \
     init.crda.sh \
     init.mdm.sh \
