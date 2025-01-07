@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "165e6a99_78f43c6a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-01-07T18:53:00Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/q/topic:%2214-embed-super_empty_img%22 already does this job",
+      "revId": "ab592c89727e68e645a74e8ed4f6ef1815b37a76",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
