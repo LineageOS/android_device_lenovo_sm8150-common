@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c93b5a99_d3af6340",
+        "filename": "common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 312,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-02-08T11:35:07Z",
+      "side": 0,
+      "message": "Shouldn\u0027t you keep this?",
+      "range": {
+        "startLine": 312,
+        "startChar": 3,
+        "endLine": 312,
+        "endChar": 95
+      },
+      "revId": "aa69d51a400f6ddf6f0a17f6c0aeb9790b2ff8a1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
