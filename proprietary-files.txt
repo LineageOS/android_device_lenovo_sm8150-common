@@ -474,7 +474,6 @@ vendor/lib64/unnhal-acc-hta.so
 vendor/lib64/unnhal-acc-hvx.so
 
 # OMX
-vendor/lib/libOmxVideoDSMode.so
 vendor/lib/libOmxVpp.so
 
 # Perf
