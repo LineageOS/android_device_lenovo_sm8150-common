@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b03811d5_1dba5b5c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-02-11T12:11:28Z",
+      "side": 1,
+      "message": "Are you doing this just for the OMX flag? You can simply set it here instead",
+      "revId": "e0d40266b7540db90c022fde3f096c028453ce3c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
