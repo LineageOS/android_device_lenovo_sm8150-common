@@ -22,6 +22,30 @@
       },
       "revId": "afc5dab3b26a9fd94d05da7b0594e023937d2784",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9874331f_54a3c272",
+        "filename": "manifest.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 149,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2025-03-17T11:12:46Z",
+      "side": 1,
+      "message": "Oof, thanks I\u0027ll fixup",
+      "parentUuid": "f31ccdb6_49c47275",
+      "range": {
+        "startLine": 149,
+        "startChar": 18,
+        "endLine": 149,
+        "endChar": 19
+      },
+      "revId": "afc5dab3b26a9fd94d05da7b0594e023937d2784",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
