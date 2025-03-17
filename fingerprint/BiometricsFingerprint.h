@@ -57,9 +57,10 @@ struct BiometricsFingerprint : public IBiometricsFingerprint, public IGoodixFPEx
     // Method to wrap legacy HAL with BiometricsFingerprint class
     static IBiometricsFingerprint* getInstance();
 
-    // Methods from ::android::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint follow.
+    // Methods from ::android::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint
+    // follow.
     Return<uint64_t> setNotify(
-        const sp<IBiometricsFingerprintClientCallback>& clientCallback) override;
+            const sp<IBiometricsFingerprintClientCallback>& clientCallback) override;
     Return<uint64_t> preEnroll() override;
     Return<RequestStatus> enroll(const hidl_array<uint8_t, 69>& hat, uint32_t gid,
                                  uint32_t timeoutSec) override;
@@ -75,7 +76,7 @@ struct BiometricsFingerprint : public IBiometricsFingerprint, public IGoodixFPEx
 
     static fingerprint_device_t* openHal();
     static void notify(
-        const fingerprint_msg_t* msg); /* Static callback for legacy HAL implementation */
+            const fingerprint_msg_t* msg); /* Static callback for legacy HAL implementation */
     static Return<RequestStatus> ErrorFilter(int32_t error);
     static FingerprintError VendorErrorFilter(int32_t error, int32_t* vendorCode);
     static FingerprintAcquiredInfo VendorAcquiredFilter(int32_t error, int32_t* vendorCode);
@@ -85,7 +86,8 @@ struct BiometricsFingerprint : public IBiometricsFingerprint, public IGoodixFPEx
     sp<IBiometricsFingerprintClientCallback> mClientCallback;
     fingerprint_device_t* mDevice;
 
-    // Methods from ::android::hardware::biometrics::fingerprint::V2_3::IBiometricsFingerprint follow.
+    // Methods from ::android::hardware::biometrics::fingerprint::V2_3::IBiometricsFingerprint
+    // follow.
     Return<bool> isUdfps(uint32_t sensorId) override;
     Return<void> onFingerDown(uint32_t x, uint32_t y, float minor, float major) override;
     Return<void> onFingerUp() override;

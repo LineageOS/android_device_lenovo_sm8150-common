@@ -3,9 +3,9 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#include <stdint.h>
-#include <drm/sde_drm.h>
 #include <compositionengine/UdfpsExtension.h>
+#include <drm/sde_drm.h>
+#include <stdint.h>
 
 uint32_t getUdfpsDimZOrder(uint32_t z) {
     return z;
