@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "05807a08_c21327e9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2025-03-20T20:58:48Z",
+      "side": 1,
+      "message": "- Not a symlink\n- Not in `rootdir`",
+      "revId": "dcf5867aa45c71b43889ebc1b62e9c1a61e0158d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
