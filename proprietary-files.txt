@@ -290,6 +290,9 @@ vendor/etc/xtra_root_cert.pem
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
 vendor/lib64/libaoa.so
+vendor/lib64/libasn1cper.so
+vendor/lib64/libasn1crt.so
+vendor/lib64/libasn1crtx.so
 vendor/lib64/libbatching.so
 vendor/lib64/libcacertclient.so
 vendor/lib64/libdataitems.so
@@ -317,6 +320,8 @@ vendor/lib64/libqcc_file_agent.so
 vendor/lib64/libqdma_file_agent.so
 vendor/lib64/libslimclient.so
 vendor/lib64/libxtadapter.so
+vendor/lib64/libxtwifi_server_protocol.so
+vendor/lib64/libxtwifi_server_protocol_uri_v3.so
 vendor/lib64/vendor.qti.gnss@1.0.so
 vendor/lib64/vendor.qti.gnss@1.1.so
 vendor/lib64/vendor.qti.gnss@1.2.so
