@@ -45,6 +45,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'vendor/bin/hw/vendor.zui.hardware.ifaa@1.0-service': blob_fixup()
+        .add_needed('vendor.zui.hardware.ifaa@1.0_vendor.so'),
     ('vendor/lib64/libwvhidl.so', 'vendor/lib64/mediadrm/libwvdrmengine.so'): blob_fixup()
         .add_needed('libcrypto_shim.so'),
 }  # fmt: skip

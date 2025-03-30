@@ -404,7 +404,7 @@ vendor/etc/excluded-input-devices.xml
 # IFAA
 vendor/bin/hw/vendor.zui.hardware.ifaa@1.0-service
 vendor/etc/init/vendor.zui.hardware.ifaa@1.0-service.rc
-vendor/lib64/vendor.zui.hardware.ifaa@1.0.so
+vendor/lib64/vendor.zui.hardware.ifaa@1.0.so:vendor/lib64/vendor.zui.hardware.ifaa@1.0_vendor.so;FIX_SONAME
 
 # IO Prefetcher
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
