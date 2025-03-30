@@ -1,5 +1,6 @@
 soong_namespace {
     imports: [
+        "vendor/lenovo/sm8150-common"
     ],
 }
 
