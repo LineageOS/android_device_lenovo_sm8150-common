@@ -92,15 +92,10 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     libaudio-resampler \
     libaudioroute \
-    libhdmiedid \
-    libexthwplugin \
-    libhfp \
     libprocessgroup.vendor \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libsndmonitor \
-    libspkrprot \
     libtinycompress \
     libvolumelistener \
     tinymix
