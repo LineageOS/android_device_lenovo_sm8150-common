@@ -10,7 +10,7 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.lights-service\.lenovo_msmnile                                        u:object_r:hal_light_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.lenovo_msmnile                  u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.1-service\.lenovo_msmnile                                u:object_r:hal_livedisplay_lenovo_msmnile_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.lenovo_heart                                        u:object_r:hal_lineage_touch_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch-service\.lenovo_heart                                             u:object_r:hal_lineage_touch_default_exec:s0
 
 # Sys files
 /sys/class/touch/tp_dev(/.*)?                                                                                           u:object_r:sysfs_tp:s0
@@ -18,4 +18,3 @@
 /sys/devices/platform/soc/[a-z0-9]+.i2c/i2c-[0-9]/[0-9]-[0-9]+/leds(/.*)?                                                                           u:object_r:sysfs_leds:s0
 /sys/module/stmvl53l1(/.*)?                                                                                             u:object_r:sysfs_vl53l1:s0
 /sys/devices/virtual/touch/tp_dev(/.*)?                                                                                 u:object_r:sysfs_tp:s0
-
