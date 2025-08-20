@@ -83,6 +83,12 @@ on boot
     setprop vendor.usb.qdss.inst.name "qdss"
     setprop vendor.usb.controller a600000.dwc3
 
+on init
+    chown system system /sys/class/backlight/panel0-hbm/brightness
+    chown system system /sys/class/dsi_hbm/hbm/enable
+    chmod 0660 /sys/class/backlight/panel0-hbm/brightness
+    chmod 0660 /sys/class/dsi_hbm/hbm/enable
+
 on property:vendor.display.lcd_density=560
    setprop dalvik.vm.heapgrowthlimit 256m
 
