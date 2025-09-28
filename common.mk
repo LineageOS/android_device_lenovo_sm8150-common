@@ -244,6 +244,7 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set,livedisplay_sysfs,enable_af,true)
 $(call soong_config_set,livedisplay_sysfs,enable_se,true)
+$(call soong_config_set,livedisplay_sysfs,se_path,/sys/class/backlight/panel0-hbm/brightness)
 
 # Media
 PRODUCT_PACKAGES += \
