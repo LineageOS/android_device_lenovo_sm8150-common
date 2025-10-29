@@ -110,7 +110,6 @@ vendor.gatekeeper.disable_spu=true
 
 # Graphics
 debug.gralloc.enable_fb_ubwc=1
-debug.mdpcomp.logs=0
 debug.sf.auto_latch_unsignaled=0
 persist.sys.sf.color_saturation=1.0
 ro.hardware.egl=adreno
