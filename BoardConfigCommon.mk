@@ -53,6 +53,7 @@ TARGET_KERNEL_ARCH := arm64
 BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_CONFIG := vendor/sm8150-perf_defconfig vendor/lenovo/sm8150-common.config
 TARGET_KERNEL_NO_GCC := true
+TARGET_KERNEL_CLANG_VERSION := r563880c
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
