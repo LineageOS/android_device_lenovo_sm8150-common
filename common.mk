@@ -205,6 +205,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
     $(LOCAL_PATH)/keylayout/slip-cover.kl:system/usr/keylayout/slip-cover.kl
 
+# ION
+$(call soong_config_set_bool,libion,legacy_impl,true)
+
 # IPA
 PRODUCT_PACKAGES += \
     ipacm \

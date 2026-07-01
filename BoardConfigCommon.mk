@@ -180,6 +180,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH_COMMON)
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # SEPolicy
+include device/lineage/sepolicy/libion/sepolicy.mk
 include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
