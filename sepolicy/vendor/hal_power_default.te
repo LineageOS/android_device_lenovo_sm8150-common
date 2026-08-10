@@ -1,15 +1,2 @@
-set_prop(hal_power_default, vendor_power_prop)
-
-allow hal_power_default init:unix_stream_socket connectto;
-allow hal_power_default property_socket:sock_file write;
-allow hal_power_default sysfs_devices_system_cpu:file write;
-allow hal_power_default sysfs_graphics:file rw_file_perms;
-allow hal_power_default vendor_latency_device:chr_file rw_file_perms;
-allow hal_power_default vendor_sysfs_devfreq:dir r_dir_perms;
-allow hal_power_default vendor_sysfs_devfreq:file rw_file_perms;
-allow hal_power_default vendor_sysfs_kgsl:file rw_file_perms;
-allow hal_power_default vendor_sysfs_kgsl:lnk_file read;
-allow hal_power_default vendor_sysfs_scsi_host:dir r_dir_perms;
-allow hal_power_default vendor_sysfs_scsi_host:file rw_file_perms;
-allow hal_lineage_touch_default sysfs_tp:dir r_dir_perms;
-allow hal_lineage_touch_default sysfs_tp:file rw_file_perms;
+allow hal_power_default sysfs_tp:dir r_dir_perms;
+allow hal_power_default sysfs_tp:file rw_file_perms;
