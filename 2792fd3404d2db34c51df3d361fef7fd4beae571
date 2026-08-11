@@ -22,6 +22,30 @@
       },
       "revId": "2792fd3404d2db34c51df3d361fef7fd4beae571",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "33e90a6c_cb066290",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2026-08-11T13:38:56Z",
+      "side": 1,
+      "message": "Thanks for the review, fixed",
+      "parentUuid": "cbe22a0b_f6a75d8d",
+      "range": {
+        "startLine": 7,
+        "startChar": 26,
+        "endLine": 7,
+        "endChar": 36
+      },
+      "revId": "2792fd3404d2db34c51df3d361fef7fd4beae571",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
