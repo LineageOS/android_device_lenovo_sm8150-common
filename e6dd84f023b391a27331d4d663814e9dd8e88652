@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f4f4ef3d_81e25861",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2026-08-14T00:47:11Z",
+      "side": 1,
+      "message": "this breaks adb in recovery on lenovo sm8150-common",
+      "revId": "e6dd84f023b391a27331d4d663814e9dd8e88652",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
