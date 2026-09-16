@@ -1,5 +1,23 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ae0a305f_22a9082f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34519
+      },
+      "writtenOn": "2026-09-16T03:26:44Z",
+      "side": 1,
+      "message": "@marcbourgoin85@gmail.com This wasnt even required to be merged after the vendor changes merged by Luk",
+      "revId": "d8e094a49a17769db3cd15741db59e0b041b7502",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ],
   "submitRequirementResults": [
     {
       "submitRequirement": {
