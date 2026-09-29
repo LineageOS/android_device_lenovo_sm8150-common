@@ -18,10 +18,8 @@
 package org.lineageos.settings.doze;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -55,12 +53,6 @@ public class DozeSettingsFragment extends PreferenceFragment
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.doze_settings);
-
-        SharedPreferences prefs = getActivity().getSharedPreferences("doze_settings",
-                Activity.MODE_PRIVATE);
-        if (savedInstanceState == null && !prefs.getBoolean("first_help_shown", false)) {
-            showHelp();
-        }
 
         boolean dozeEnabled = DozeUtils.isDozeEnabled(getActivity());
 
@@ -137,22 +129,5 @@ public class DozeSettingsFragment extends PreferenceFragment
         mHandwavePreference.setEnabled(isChecked);
         mPocketPreference.setEnabled(isChecked);
         mSmartWakePreference.setEnabled(isChecked);
-    }
-
-    private void showHelp() {
-        AlertDialog helpDialog = new AlertDialog.Builder(getActivity())
-                .setTitle(R.string.doze_settings_help_title)
-                .setMessage(R.string.doze_settings_help_text)
-                .setPositiveButton(R.string.dialog_ok,
-                        (dialog, which) -> {
-                            getActivity()
-                                    .getSharedPreferences("doze_settings", Activity.MODE_PRIVATE)
-                                    .edit()
-                                    .putBoolean("first_help_shown", true)
-                                    .commit();
-                            dialog.cancel();
-                        })
-                .create();
-        helpDialog.show();
     }
 }
